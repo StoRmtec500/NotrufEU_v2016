@@ -21,7 +21,7 @@ $$(document).on('pageInit', '.page[data-page="about"]', function (e) {
     if (device.iphone) {
         NotrufEU_2016.alert('Here comes About page');
     } else  {
-        console.log('browser');
+        console.log('browse');
     }
 
 });
