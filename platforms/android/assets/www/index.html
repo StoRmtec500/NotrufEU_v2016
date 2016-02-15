@@ -14,11 +14,24 @@
     <link rel="stylesheet" href="css/my-app.css">
 </head>
     <body>
-        <div class="app1">
-            <h1>Hallo Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+        <div class="statusbar-overlay"></div>
+        <div class="views">
+            <div class="view view-main">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                        <div class="center sliding">Awesome App</div>
+                    </div>
+                </div>
+                <div class="pages">
+                    <div data-page="index" class="page">
+                        <div class="page-content">
+                            <a href="#" class="button button-big">Big Button </a>
+                            <a href="about.html">About app</a>
+                        </div>
+                    </div>
+                </div> <!-- CONTENT -->
+
             </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>

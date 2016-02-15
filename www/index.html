@@ -14,28 +14,25 @@
     <link rel="stylesheet" href="css/my-app.css">
 </head>
     <body>
-        <div class="statusbar-overlay">Test</div>
+        <div class="statusbar-overlay"></div>
         <div class="views">
             <div class="view view-main">
-                <!-- CONTENT -->
-            </div>
-
-
-
-            <!-- TABBAR -->
-            <div class="toolbar tabbar tabbar-labels">
-                <div class="toolbar-inner">
-                    <a href="#home" class="tab-link active">
-                        <i class="icon demo-icon-1"></i>
-                        <span class="tabbar-labels">Home</span>
-                    </a>
-                    <a href="#home" class="tab-link active">
-                        <i class="icon demo-icon-1"></i>
-                        <span class="tabbar-labels">Info</span>
-                    </a>
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                        <div class="center sliding">Awesome App</div>
+                    </div>
                 </div>
-            </div>
+                <div class="pages">
+                    <div data-page="index" class="page">
+                        <div class="page-content">
+                            <a href="#" class="button button-big">Big Button </a>
+                            <a href="about.html">About app</a>
+                        </div>
+                    </div>
+                </div> <!-- CONTENT -->
 
+            </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
